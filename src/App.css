@@ -27,3 +27,7 @@ body {
   width: 200px;
   margin: 20px, auto;
 }
+li{
+  text-decoration: none;
+  list-style: none;
+}
