@@ -31,7 +31,7 @@ const Game = () => {
             const destination = move ? 'Go to move: ' + move : 'Go to start';
             return (
                 <li key={move}>
-                    <button onClick={() => jumpTo(move)}>{destination}</button>  
+                    <button className="button" onClick={() => jumpTo(move)}>{destination}</button>  
                 </li>
             )
         })
@@ -41,7 +41,7 @@ const Game = () => {
         <>
             <Board squares={history[stepNumber]} onClick={handleClick} />
             <div className="board">
-                <p>
+                <p className="winner">
                     {winner ? 'Winner: ' + winner : 'Next Player: ' + (xIsNext ? 'X' : 'O')}
                 </p>
                 {renderMoves()}
